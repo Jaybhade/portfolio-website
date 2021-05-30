@@ -32,7 +32,7 @@ const blog = () => {
           Blog
         </div>
         <div>I write technical blogs.</div>
-        <div>
+        <div style={{ overflow: "hidden" }}>
           <Link href="/">
             <a>
               <BlogCard left="1" />

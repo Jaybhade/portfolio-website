@@ -16,3 +16,65 @@ a {
 * {
   box-sizing: border-box;
 }
+
+article {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  margin-top: 64px;
+}
+
+article h1 {
+  color: #f2f5f7;
+}
+
+article h2 {
+  color: #ffe100;
+}
+
+article p {
+  letter-spacing: 0.8px;
+}
+
+article pre {
+  background-color: black;
+  padding: 10px;
+  overflow-x: scroll;
+}
+
+article a {
+  color: hsl(230deg, 100%, 67%);
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+article i {
+  font-family: "Sriracha", cursive;
+  color: #ff0a78;
+}
+
+article code {
+  background-color: rgba(115, 125, 140, 0.17);
+}
+
+article pre code {
+  background-color: black;
+}
+
+article u {
+  background-image: linear-gradient(120deg, #ff0a78 0%, #ff0a78 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+article u:hover {
+  background-size: 100% 88%;
+}
+
+article img {
+  max-width: 100%;
+}

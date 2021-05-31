@@ -20,12 +20,13 @@ export default function Home() {
 
       <div
         style={{
-          backgroundColor: "#23263A",
+          backgroundColor: "#0E141B",
           marginTop: "64px",
           top: 0,
           bottom: 0,
           left: 0,
           right: 0,
+          height: "100%",
           position: "absolute",
           justifyContent: "center",
           alignItems: "center",

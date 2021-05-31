@@ -15,7 +15,7 @@ const Blog = (props) => {
     return isTablet ? children : null;
   };
   return (
-    <div style={{ marginTop: "64px" }}>
+    <div style={{ height: "100%" }}>
       <div
         style={{
           color: "white",
@@ -29,7 +29,7 @@ const Blog = (props) => {
           bottom: 0,
         }}
       >
-        <div style={{ fontSize: "2.2em", marginTop: "10px", fontWeight: 700 }}>
+        <div style={{ fontSize: "2.2em", marginTop: "74px", fontWeight: 700 }}>
           Blog
         </div>
         <div>I write technical blogs.</div>

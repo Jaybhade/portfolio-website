@@ -27,7 +27,7 @@ const BlogCard = (props) => {
             padding: "10px",
             marginTop: "25px",
             borderRadius: "5px",
-            marginBottom: "15px",
+            marginBottom: "20px",
           }}
         >
           <div

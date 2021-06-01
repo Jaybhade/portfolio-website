@@ -34,16 +34,20 @@ const MobileNav = () => {
           zIndex: 1000,
         }}
       >
-        <div
-          style={{
-            fontFamily: "satisfy",
-            fontSize: "28px",
-            color: "white",
-            fontWeight: "700",
-          }}
-        >
-          J
-        </div>
+        <Link href="/">
+          <a>
+            <div
+              style={{
+                fontFamily: "satisfy",
+                fontSize: "28px",
+                color: "white",
+                fontWeight: "700",
+              }}
+            >
+              J
+            </div>
+          </a>
+        </Link>
         <div onClick={() => setShow(!show)} style={{ cursor: "pointer" }}>
           <MenuIcon />
         </div>
@@ -75,16 +79,20 @@ const MobileNav = () => {
             top: 0,
           }}
         >
-          <div
-            style={{
-              fontFamily: "satisfy",
-              fontSize: "28px",
-              color: "white",
-              fontWeight: "700",
-            }}
-          >
-            J
-          </div>
+          <Link href="/">
+            <a>
+              <div
+                style={{
+                  fontFamily: "satisfy",
+                  fontSize: "28px",
+                  color: "white",
+                  fontWeight: "700",
+                }}
+              >
+                J
+              </div>
+            </a>
+          </Link>
           <div onClick={() => setShow(!show)} style={{ cursor: "pointer" }}>
             <CrossIcon />
           </div>

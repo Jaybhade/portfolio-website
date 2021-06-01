@@ -16,18 +16,20 @@ const DesktopNav = () => {
         top: 0,
       }}
     >
-      <div
-        style={{
-          fontFamily: "satisfy",
-          fontSize: "28px",
-          color: "white",
-          fontWeight: "700",
-        }}
-      >
-        <Link href="/">
-          <a>J</a>
-        </Link>
-      </div>
+      <Link href="/">
+        <a>
+          <div
+            style={{
+              fontFamily: "satisfy",
+              fontSize: "28px",
+              color: "white",
+              fontWeight: "700",
+            }}
+          >
+            J
+          </div>
+        </a>
+      </Link>
       <div
         style={{
           display: "flex",

@@ -1,5 +1,5 @@
 ---
-title: 'How To Build Blog Using NextJs'
+title: 'Build a Blog with NextJs'
 date: '2021-06-07'
 excerpt: NextJS is a the React framework for production. If you've been thinking about creating a dev blog for yourself, take a look how I made it for myself.
 ---

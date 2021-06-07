@@ -170,11 +170,31 @@ const MobileNav = () => {
               padding: "10px",
             }}
           >
-            <GithubIcon />
-            <LinkedinIcon />
-            <GmailIcon />
-            <InstaIcon />
-            <TelegramIcon />
+            <Link href="https://github.com/Jaybhade">
+              <a target="_blank">
+                <GithubIcon />
+              </a>
+            </Link>
+            <Link href="http://linkedin.com/in/jayeshbhade">
+              <a target="_blank">
+                <LinkedinIcon />
+              </a>
+            </Link>
+            <Link href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jayeshjibhade@gmail.com">
+              <a target="_blank">
+                <GmailIcon />
+              </a>
+            </Link>
+            <Link href="https://www.instagram.com/jayesh.py/">
+              <a target="_blank">
+                <InstaIcon />
+              </a>
+            </Link>
+            <Link href="https://t.me/drywings">
+              <a target="_blank">
+                <TelegramIcon />
+              </a>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

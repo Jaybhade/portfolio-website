@@ -42,10 +42,9 @@ const BlogCard = (props) => {
             <div
               style={{
                 backgroundColor: "#0E141B",
-                color: "grey",
                 padding: "10px",
                 marginTop: "-48px",
-                color: "#FF4A57",
+                color: "#ffe100",
               }}
             >
               {formattedDate}

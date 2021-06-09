@@ -6,11 +6,11 @@ const GmailIcon = () => {
       width="32"
       height="32"
       viewBox="0 0 24 24"
-      stroke-width="1.5"
+      strokeWidth="1.5"
       stroke="#ffffff"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <rect x="3" y="5" width="18" height="14" rx="2" />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Head from "next/head";
 //icons
 import MenuIcon from "../icons/menu";
 import CrossIcon from "../icons/cross";
@@ -20,53 +21,59 @@ const MobileNav = () => {
 
   if (!show) {
     return (
-      <div
-        style={{
-          backgroundColor: "#1F2235",
-          height: "64px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "25px",
-          position: "fixed",
-          width: "100%",
-          top: 0,
-          zIndex: 1000,
-        }}
-      >
-        <Link href="/">
-          <a>
-            <div
-              style={{
-                fontFamily: "satisfy",
-                fontSize: "28px",
-                color: "white",
-                fontWeight: "700",
-              }}
-            >
-              J
-            </div>
-          </a>
-        </Link>
-        <div onClick={() => setShow(!show)} style={{ cursor: "pointer" }}>
-          <MenuIcon />
-        </div>
-      </div>
-    );
-  }
-  if (show) {
-    return (
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "#1F2235",
-          position: "fixed",
-          color: "white",
-          top: 0,
-          zIndex: 1000,
-        }}
-      >
+      <div>
+        <Head>
+          <link rel="manifest" href="manifest.json" />
+
+          <meta name="mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="application-name" content="Jayesh" />
+          <meta name="apple-mobile-web-app-title" content="Jayesh" />
+          <meta name="theme-color" content="#1f2235" />
+          <meta name="msapplication-navbutton-color" content="#1f2235" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+          />
+          <meta name="msapplication-starturl" content="/" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
+
+          <link rel="icon" type="image/png" sizes="512x512" href="logo.png" />
+          <link
+            rel="apple-touch-icon"
+            type="image/png"
+            sizes="512x512"
+            href="logo.png"
+          />
+          <title>Jayesh Bhade Portfolio</title>
+          <meta
+            name="description"
+            content="I am a Fullstack Web Developer, React Native developer
+              and Competitive coder."
+          />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta
+            httpEquiv="Content-Type"
+            content="text/html; charset=ISO-8859-1"
+          />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
         <div
           style={{
             backgroundColor: "#1F2235",
@@ -75,8 +82,10 @@ const MobileNav = () => {
             alignItems: "center",
             justifyContent: "space-between",
             padding: "25px",
+            position: "fixed",
             width: "100%",
             top: 0,
+            zIndex: 1000,
           }}
         >
           <Link href="/">
@@ -94,109 +103,209 @@ const MobileNav = () => {
             </a>
           </Link>
           <div onClick={() => setShow(!show)} style={{ cursor: "pointer" }}>
-            <CrossIcon />
+            <MenuIcon />
           </div>
         </div>
-        <motion.div
-          variants={list}
-          initial="hidden"
-          animate="visible"
+      </div>
+    );
+  }
+  if (show) {
+    return (
+      <div>
+        <Head>
+          <link rel="manifest" href="manifest.json" />
+
+          <meta name="mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="application-name" content="Jayesh" />
+          <meta name="apple-mobile-web-app-title" content="Jayesh" />
+          <meta name="theme-color" content="#1f2235" />
+          <meta name="msapplication-navbutton-color" content="#1f2235" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+          />
+          <meta name="msapplication-starturl" content="/" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
+
+          <link rel="icon" type="image/png" sizes="512x512" href="logo.png" />
+          <link
+            rel="apple-touch-icon"
+            type="image/png"
+            sizes="512x512"
+            href="logo.png"
+          />
+          <title>Jayesh Bhade Portfolio</title>
+          <meta
+            name="description"
+            content="I am a Fullstack Web Developer, React Native developer
+              and Competitive coder."
+          />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta
+            httpEquiv="Content-Type"
+            content="text/html; charset=ISO-8859-1"
+          />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+        <div
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "space-around",
+            width: "100%",
             height: "100%",
-            fontSize: "24px",
+            backgroundColor: "#1F2235",
+            position: "fixed",
+            color: "white",
+            top: 0,
+            zIndex: 1000,
           }}
         >
-          <motion.div
-            variants={item}
-            transition={{ duration: 0.4 }}
-            initial="hidden"
-            animate="visible"
+          <div
+            style={{
+              backgroundColor: "#1F2235",
+              height: "64px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              padding: "25px",
+              width: "100%",
+              top: 0,
+            }}
           >
             <Link href="/">
-              <a>Home</a>
+              <a>
+                <div
+                  style={{
+                    fontFamily: "satisfy",
+                    fontSize: "28px",
+                    color: "white",
+                    fontWeight: "700",
+                  }}
+                >
+                  J
+                </div>
+              </a>
             </Link>
-          </motion.div>
+            <div onClick={() => setShow(!show)} style={{ cursor: "pointer" }}>
+              <CrossIcon />
+            </div>
+          </div>
           <motion.div
-            variants={item}
-            transition={{ duration: 0.5 }}
-            initial="hidden"
-            animate="visible"
-          >
-            About
-          </motion.div>
-          <motion.div
-            variants={item}
-            transition={{ duration: 0.6 }}
-            initial="hidden"
-            animate="visible"
-          >
-            Projects
-          </motion.div>
-          <motion.div
-            variants={item}
-            transition={{ duration: 0.7 }}
-            initial="hidden"
-            animate="visible"
-          >
-            <Link href="/blog">
-              <a>Blog</a>
-            </Link>
-          </motion.div>
-          <motion.div
-            variants={item}
-            transition={{ duration: 0.8 }}
-            initial="hidden"
-            animate="visible"
-          >
-            Contact
-          </motion.div>
-          <motion.div
-            variants={item}
-            transition={{ duration: 0.9 }}
+            variants={list}
             initial="hidden"
             animate="visible"
             style={{
               display: "flex",
+              flexDirection: "column",
               alignItems: "center",
               justifyContent: "space-around",
-              width: "60%",
-              marginBottom: "40px",
-              marginLeft: "5px",
-              marginRight: "5px",
-              padding: "10px",
+              height: "100%",
+              fontSize: "24px",
             }}
           >
-            <Link href="https://github.com/Jaybhade">
-              <a target="_blank">
-                <GithubIcon />
-              </a>
-            </Link>
-            <Link href="http://linkedin.com/in/jayeshbhade">
-              <a target="_blank">
-                <LinkedinIcon />
-              </a>
-            </Link>
-            <Link href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jayeshjibhade@gmail.com">
-              <a target="_blank">
-                <GmailIcon />
-              </a>
-            </Link>
-            <Link href="https://www.instagram.com/jayesh.py/">
-              <a target="_blank">
-                <InstaIcon />
-              </a>
-            </Link>
-            <Link href="https://t.me/drywings">
-              <a target="_blank">
-                <TelegramIcon />
-              </a>
-            </Link>
+            <motion.div
+              variants={item}
+              transition={{ duration: 0.4 }}
+              initial="hidden"
+              animate="visible"
+            >
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </motion.div>
+            <motion.div
+              variants={item}
+              transition={{ duration: 0.5 }}
+              initial="hidden"
+              animate="visible"
+            >
+              About
+            </motion.div>
+            <motion.div
+              variants={item}
+              transition={{ duration: 0.6 }}
+              initial="hidden"
+              animate="visible"
+            >
+              Projects
+            </motion.div>
+            <motion.div
+              variants={item}
+              transition={{ duration: 0.7 }}
+              initial="hidden"
+              animate="visible"
+            >
+              <Link href="/blog">
+                <a>Blog</a>
+              </Link>
+            </motion.div>
+            <motion.div
+              variants={item}
+              transition={{ duration: 0.8 }}
+              initial="hidden"
+              animate="visible"
+            >
+              Contact
+            </motion.div>
+            <motion.div
+              variants={item}
+              transition={{ duration: 0.9 }}
+              initial="hidden"
+              animate="visible"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-around",
+                width: "60%",
+                marginBottom: "40px",
+                marginLeft: "5px",
+                marginRight: "5px",
+                padding: "10px",
+              }}
+            >
+              <Link href="https://github.com/Jaybhade">
+                <a target="_blank">
+                  <GithubIcon />
+                </a>
+              </Link>
+              <Link href="http://linkedin.com/in/jayeshbhade">
+                <a target="_blank">
+                  <LinkedinIcon />
+                </a>
+              </Link>
+              <Link href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jayeshjibhade@gmail.com">
+                <a target="_blank">
+                  <GmailIcon />
+                </a>
+              </Link>
+              <Link href="https://www.instagram.com/jayesh.py/">
+                <a target="_blank">
+                  <InstaIcon />
+                </a>
+              </Link>
+              <Link href="https://t.me/drywings">
+                <a target="_blank">
+                  <TelegramIcon />
+                </a>
+              </Link>
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     );
   }

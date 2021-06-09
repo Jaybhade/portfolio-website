@@ -1,0 +1,16 @@
+{
+  "name": "Jayesh Bhade",
+  "short_name": "Jayesh",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1f2235",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#0e141b"
+}

@@ -91,6 +91,7 @@ export default function Home() {
               color: "grey",
               fontFamily: "Roboto mono",
               padding: "15px",
+              maxWidth: "480px",
             }}
           >
             - Introduction
@@ -101,8 +102,8 @@ export default function Home() {
               </span>
             </h1>
             <p>
-              I am a Fullstack Web Developer, React Native<br></br> developer
-              and Competitive coder.
+              I am a Fullstack Web Developer, React Native developer and
+              Competitive coder.
             </p>
             {/* <span
               style={{

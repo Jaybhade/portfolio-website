@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import Programmer from "../components/programmer2.svg";
-import AboutImg from "../components/undraw_about.svg";
 
 export default function Home() {
   const breakpoint = 991;
@@ -121,8 +120,7 @@ export default function Home() {
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  alignItems: "center",
-                  margin: "10px",
+                  marginBottom: "10px",
                 }}
               >
                 <Image
@@ -141,9 +139,15 @@ export default function Home() {
               </span>
             </h1>
             <p style={{ color: "white" }}>
-              I am a self taught developer. I love building cool stuffs for web
-              and mobile using: Javascript/Typescript, ReactJS, NodeJS and React
-              Native.
+              I am a self taught developer. I love building stuffs for web and
+              mobile using: Javascript/Typescript,
+              <Image
+                className="rotate"
+                src={"/techstack/react.png"}
+                width={15}
+                height={15}
+              />
+              ﱞReactJS, NodeJS and React Native.
             </p>
             {/* <span
               style={{

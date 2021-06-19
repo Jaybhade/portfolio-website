@@ -147,7 +147,7 @@ export default function Home() {
                 width={15}
                 height={15}
               />
-              ﱞReactJS, NodeJS and React Native.
+              ReactJS, NodeJS and React Native.
             </p>
             {/* <span
               style={{

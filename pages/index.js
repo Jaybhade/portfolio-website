@@ -1,8 +1,11 @@
 import Head from "next/head";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import Programmer from "../components/programmer2.svg";
+import Tag from "../components/tag";
+import GithubIcon from "../icons/github";
 
 export default function Home() {
   const breakpoint = 991;
@@ -81,8 +84,8 @@ export default function Home() {
           position: "absolute",
           justifyContent: "center",
           alignItems: "center",
-          scrollSnapType: "y mandatory",
-          overflowY: "scroll",
+          //scrollSnapType: "y mandatory",
+          //overflowY: "scroll",
         }}
       >
         <div
@@ -94,7 +97,7 @@ export default function Home() {
             alignItems: "center",
             marginLeft: "20px",
             marginRight: "20px",
-            scrollSnapAlign: "start",
+            //scrollSnapAlign: "start",
           }}
         >
           <motion.div
@@ -172,6 +175,168 @@ export default function Home() {
               />
             </div>
           </Desktop>
+        </div>
+        <div
+          style={{
+            //scrollSnapAlign: "start",
+            margin: "auto",
+            display: "flex",
+            flex: 1,
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            fontFamily: "Source Sans Pro",
+            color: "white",
+            marginLeft: "30px",
+            marginRight: "30px",
+          }}
+        >
+          <div style={{ color: "white" }}>
+            <h1 id="projects">Projects</h1>
+          </div>
+          <div
+            style={{
+              padding: "20px",
+              maxWidth: "700px",
+              backgroundColor: "#2D3748",
+              borderRadius: "10px",
+              marginBottom: "20px",
+            }}
+          >
+            <Image
+              src={"/project/portfolio.png"}
+              width={1366}
+              height={768}
+              alt="portfolio website"
+            />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
+              <div>
+                <h2 style={{ marginRight: "10px" }}>Portfolio Website</h2>
+              </div>
+              <div>
+                <Link href="https://github.com/Jaybhade/portfolio-website">
+                  <a target="_blank">
+                    <GithubIcon />
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <p>
+              A portfolio website to showcase all my projects on same platform
+              and write technical blogs on topics I recently explored.
+            </p>
+            <Tag>#NextJs</Tag>
+            <Tag>#ReactJs</Tag>
+            <Tag>#Framer</Tag>
+            <Tag>#Javascript</Tag>
+            <NotDesktop>
+              <br />
+              <br />
+            </NotDesktop>
+            <Tag>#Firebase</Tag>
+
+            <Tag>#Markdown</Tag>
+            <Tag>#PWA</Tag>
+          </div>
+          <div
+            style={{
+              padding: "20px",
+              maxWidth: "700px",
+              backgroundColor: "#2D3748",
+              borderRadius: "10px",
+              marginBottom: "20px",
+            }}
+          >
+            <Image
+              src={"/project/covid-19_tracker.png"}
+              width={1366}
+              height={768}
+              alt="covid-19 tracker"
+            />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
+              <div>
+                <h2 style={{ marginRight: "10px" }}>Covid-19 Tracker</h2>
+              </div>
+              <div>
+                <Link href="https://github.com/Jaybhade/covid19Tracker">
+                  <a target="_blank">
+                    <GithubIcon />
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <p>
+              An application made of React Native framework uses APIs to fetch
+              the number of covid cases related information.
+            </p>
+            <Tag>#ReactNative</Tag>
+            <Tag>#APIs</Tag>
+            <Tag>#Android/Ios</Tag>
+            <NotDesktop>
+              <br />
+              <br />
+            </NotDesktop>
+            <Tag>#Javascript</Tag>
+          </div>
+          <div
+            style={{
+              padding: "20px",
+              maxWidth: "700px",
+              backgroundColor: "#2D3748",
+              borderRadius: "10px",
+              marginBottom: "20px",
+            }}
+          >
+            <Image
+              src={"/project/postman.png"}
+              width={1366}
+              height={768}
+              alt="ecommerce api"
+            />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
+              <div>
+                <h2 style={{ marginRight: "10px" }}>Ecommerce API</h2>
+              </div>
+              <div>
+                <Link href="https://github.com/Jaybhade/expressjs-ecommerce-api">
+                  <a target="_blank">
+                    <GithubIcon />
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <p>
+              Rest APIs made with Nodejs express framework to perform crud
+              operation for token-based authentication, products, orders, and
+              other activities.
+            </p>
+            <Tag>#NodeJs</Tag>
+            <Tag>#ExpressJs</Tag>
+            <Tag>#Mongodb</Tag>
+            <NotDesktop>
+              <br />
+              <br />
+            </NotDesktop>
+            <Tag>#Typescript</Tag>
+          </div>
         </div>
       </div>
     </div>

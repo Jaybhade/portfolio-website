@@ -87,7 +87,11 @@ const DesktopNav = () => {
             </Link>
           </div>
           <div>About</div>
-          <div>Projects</div>
+          <div>
+            <Link href="/#projects">
+              <a>Projects</a>
+            </Link>
+          </div>
           <div>
             <Link href="/blog">
               <a>Blog</a>

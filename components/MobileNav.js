@@ -216,7 +216,9 @@ const MobileNav = () => {
               initial="hidden"
               animate="visible"
             >
-              Projects
+              <Link href="/#projects">
+                <a>Projects</a>
+              </Link>
             </motion.div>
             <motion.div
               variants={item}

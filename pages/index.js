@@ -84,8 +84,8 @@ export default function Home() {
           position: "absolute",
           justifyContent: "center",
           alignItems: "center",
-          scrollSnapType: "y mandatory",
-          overflowY: "scroll",
+          //scrollSnapType: "y mandatory",
+          //overflowY: "scroll",
         }}
       >
         <div
@@ -97,7 +97,7 @@ export default function Home() {
             alignItems: "center",
             marginLeft: "20px",
             marginRight: "20px",
-            scrollSnapAlign: "start",
+            //scrollSnapAlign: "start",
           }}
         >
           <motion.div
@@ -178,7 +178,7 @@ export default function Home() {
         </div>
         <div
           style={{
-            scrollSnapAlign: "start",
+            //scrollSnapAlign: "start",
             margin: "auto",
             display: "flex",
             flex: 1,

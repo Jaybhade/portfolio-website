@@ -2,7 +2,7 @@ const TelegramIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="icon icon-tabler icon-tabler-brand-telegram"
+      className="icon icon-tabler icon-tabler-brand-telegram"
       width="32"
       height="32"
       viewBox="0 0 24 24"

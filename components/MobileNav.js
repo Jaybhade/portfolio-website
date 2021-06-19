@@ -208,21 +208,13 @@ const MobileNav = () => {
               initial="hidden"
               animate="visible"
             >
-              About
-            </motion.div>
-            <motion.div
-              variants={item}
-              transition={{ duration: 0.6 }}
-              initial="hidden"
-              animate="visible"
-            >
               <Link href="/#projects">
                 <a>Projects</a>
               </Link>
             </motion.div>
             <motion.div
               variants={item}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 0.6 }}
               initial="hidden"
               animate="visible"
             >
@@ -232,7 +224,7 @@ const MobileNav = () => {
             </motion.div>
             <motion.div
               variants={item}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.7 }}
               initial="hidden"
               animate="visible"
             >
@@ -240,7 +232,7 @@ const MobileNav = () => {
             </motion.div>
             <motion.div
               variants={item}
-              transition={{ duration: 0.9 }}
+              transition={{ duration: 0.8 }}
               initial="hidden"
               animate="visible"
               style={{

@@ -86,7 +86,6 @@ const DesktopNav = () => {
               <a>Home</a>
             </Link>
           </div>
-          <div>About</div>
           <div>
             <Link href="/#projects">
               <a>Projects</a>

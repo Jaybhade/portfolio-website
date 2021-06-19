@@ -141,7 +141,7 @@ export default function Home() {
                 Jayesh Bhade
               </span>
             </h1>
-            <p style={{ color: "white" }}>
+            <div style={{ color: "white" }}>
               I am a self taught developer. I love building stuffs for web and
               mobile using: Javascript/Typescript,
               <Image
@@ -151,7 +151,7 @@ export default function Home() {
                 height={15}
               />
               ReactJS, NodeJS and React Native.
-            </p>
+            </div>
             {/* <span
               style={{
                 padding: 15,
@@ -227,10 +227,10 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <p>
+            <div style={{ marginBottom: "15px" }}>
               A portfolio website to showcase all my projects on same platform
               and write technical blogs on topics I recently explored.
-            </p>
+            </div>
             <Tag>#NextJs</Tag>
             <Tag>#ReactJs</Tag>
             <Tag>#Framer</Tag>
@@ -277,10 +277,10 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <p>
+            <div style={{ marginBottom: "15px" }}>
               An application made of React Native framework uses APIs to fetch
               the number of covid cases related information.
-            </p>
+            </div>
             <Tag>#ReactNative</Tag>
             <Tag>#APIs</Tag>
             <Tag>#Android/Ios</Tag>
@@ -323,11 +323,11 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <p>
+            <div style={{ marginBottom: "15px" }}>
               Rest APIs made with Nodejs express framework to perform crud
               operation for token-based authentication, products, orders, and
               other activities.
-            </p>
+            </div>
             <Tag>#NodeJs</Tag>
             <Tag>#ExpressJs</Tag>
             <Tag>#Mongodb</Tag>

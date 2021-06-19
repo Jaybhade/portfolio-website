@@ -4,7 +4,7 @@ body {
   background-color: #0e141b;
   margin: 0px;
   min-height: 100%;
-  height: 100%;
+  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
@@ -79,4 +79,17 @@ article u:hover {
 
 article img {
   max-width: 100%;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

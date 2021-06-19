@@ -1,11 +1,27 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import useMediaQuery from "../hooks/useMediaQuery";
+import Programmer from "../components/programmer2.svg";
+import AboutImg from "../components/undraw_about.svg";
 
 export default function Home() {
+  const breakpoint = 991;
+  const size = useMediaQuery(breakpoint);
+  const Desktop = ({ children }) => {
+    const isDesktop = !size;
+    return isDesktop ? children : null;
+  };
+  const NotDesktop = ({ children }) => {
+    const isTablet = size;
+    return isTablet ? children : null;
+  };
+
   const item = {
     hidden: { y: 50, opacity: 0 },
     visible: { y: 0, opacity: 1 },
   };
+
   return (
     <div>
       <Head>
@@ -53,11 +69,6 @@ export default function Home() {
               and Competitive coder."
         />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <div
@@ -71,15 +82,20 @@ export default function Home() {
           position: "absolute",
           justifyContent: "center",
           alignItems: "center",
+          scrollSnapType: "y mandatory",
+          overflowY: "scroll",
         }}
       >
         <div
           style={{
-            height: "100%",
+            height: "100vh",
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
+            flexDirection: Desktop ? "row" : "column",
+            justifyContent: "space-around",
             alignItems: "center",
+            marginLeft: "20px",
+            marginRight: "20px",
+            scrollSnapAlign: "start",
           }}
         >
           <motion.div
@@ -94,6 +110,29 @@ export default function Home() {
               maxWidth: "480px",
             }}
           >
+            <NotDesktop
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  margin: "10px",
+                }}
+              >
+                <Image
+                  src={Programmer}
+                  width={300}
+                  height={300}
+                  alt="programmer"
+                />
+              </div>
+            </NotDesktop>
             - Introduction
             <h1 style={{ color: "white" }}>
               I am{" "}
@@ -101,9 +140,10 @@ export default function Home() {
                 Jayesh Bhade
               </span>
             </h1>
-            <p>
-              I am a Fullstack Web Developer, React Native developer and
-              Competitive coder.
+            <p style={{ color: "white" }}>
+              I am a self taught developer. I love building cool stuffs for web
+              and mobile using: Javascript/Typescript, ReactJS, NodeJS and React
+              Native.
             </p>
             {/* <span
               style={{
@@ -118,6 +158,16 @@ export default function Home() {
               Download Resume
             </span> */}
           </motion.div>
+          <Desktop>
+            <div>
+              <Image
+                src={Programmer}
+                width={450}
+                height={450}
+                alt="programmer"
+              />
+            </div>
+          </Desktop>
         </div>
       </div>
     </div>

@@ -234,7 +234,7 @@ export default function Home() {
             <Tag>#NextJs</Tag>
             <Tag>#ReactJs</Tag>
             <Tag>#Framer</Tag>
-            <Tag>#Javascript</Tag>
+            <Tag>#PWA</Tag>
             <NotDesktop>
               <br />
               <br />
@@ -242,7 +242,7 @@ export default function Home() {
             <Tag>#Firebase</Tag>
 
             <Tag>#Markdown</Tag>
-            <Tag>#PWA</Tag>
+            <Tag>#Javascript</Tag>
           </div>
           <div
             style={{

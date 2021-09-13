@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@badrap/bar-of-progress": "^0.1.2",
     "framer-motion": "^4.1.17",
     "gray-matter": "^4.0.3",
     "next": "^11.0.0",

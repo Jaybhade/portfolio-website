@@ -3,6 +3,19 @@ import Head from "next/head";
 import MobileNav from "../components/MobileNav";
 import DesktopNav from "../components/DesktopNav";
 import useMediaQuery from "../hooks/useMediaQuery";
+import ProgressBar from "@badrap/bar-of-progress";
+import Router from "next/router";
+
+const progress = new ProgressBar({
+  size: 3,
+  color: "red",
+  className: "bar-of-progress",
+  delay: 100,
+});
+
+Router.events.on("routeChangeStart", progress.start);
+Router.events.on("routeChangeComplete", progress.finish);
+Router.events.on("routeChangeError", progress.finish);
 
 const MyApp = ({ Component, pageProps }) => {
   const breakpoint = 991;

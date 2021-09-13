@@ -25,7 +25,7 @@ excerpt: NextJS is a the React framework for production. If you've been thinking
 
 To create a project, run:
 
-```
+```javascript
 npx create-next-app
 # or
 yarn create next-app
@@ -44,7 +44,7 @@ Remove all the unwanted elements from the code and save the file. Next we will s
 
 I don't like writing CSS much. So, I started looking for some other ways to make my website responsive. So inside the hook folder, I made a hook named useMediaQuery.js.
 Then inside useMediaQuery.js,
-```
+```javascript
 import { useState, useCallback, useEffect } from "react";
 
 const useMediaQuery = (width) => {

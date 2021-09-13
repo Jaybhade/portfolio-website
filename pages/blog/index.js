@@ -32,7 +32,6 @@ const Blog = (props) => {
         <div style={{ fontSize: "2.2em", marginTop: "74px", fontWeight: 700 }}>
           Blog
         </div>
-        <div>I write technical blogs.</div>
         <div style={{ overflow: Desktop ? null : "hidden" }}>
           {posts.map((post) => {
             return <BlogCard key={post.slug} post={post} />;

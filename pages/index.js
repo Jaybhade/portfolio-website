@@ -337,6 +337,96 @@ export default function Home() {
             </NotDesktop>
             <Tag>#Typescript</Tag>
           </div>
+          <div style={{ color: "white" }}>
+            <h1 id="projects">Some of my hosted work</h1>
+          </div>
+          <div
+            style={{
+              padding: "20px",
+              maxWidth: "700px",
+              backgroundColor: "#2D3748",
+              borderRadius: "10px",
+              marginBottom: "20px",
+            }}
+          >
+            <Image
+              src={"/project/veteranspen.png"}
+              width={1366}
+              height={768}
+              alt="blogging website"
+            />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
+              <div>
+                <h2 style={{ marginRight: "10px" }}>Portfolio Website</h2>
+              </div>
+              <div>
+                <Link href="https://github.com/Jaybhade/portfolio-website">
+                  <a target="_blank">Link</a>
+                </Link>
+              </div>
+            </div>
+            <div style={{ marginBottom: "15px" }}>
+              A blogging and multipurpose website made of NextJs and Contentful
+              a content management system as backend.
+            </div>
+            <Tag>#NextJs</Tag>
+            <Tag>#ReactJs</Tag>
+            <Tag>#NodeJs</Tag>
+            <NotDesktop>
+              <br />
+              <br />
+            </NotDesktop>
+            <Tag>#Contentful</Tag>
+            <Tag>#Vercel</Tag>
+            <Tag>#Javascript</Tag>
+          </div>
+          <div
+            style={{
+              padding: "20px",
+              maxWidth: "700px",
+              backgroundColor: "#2D3748",
+              borderRadius: "10px",
+              marginBottom: "20px",
+            }}
+          >
+            <Image
+              src={"/project/aciie.png"}
+              width={1366}
+              height={768}
+              alt="ACIIE website"
+            />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
+              <div>
+                <h2 style={{ marginRight: "10px" }}>ACIIE, DAVV Website</h2>
+              </div>
+              <div>
+                <Link href="https://aciie.ietdavv.edu.in">
+                  <a target="_blank">Link</a>
+                </Link>
+              </div>
+            </div>
+            <div style={{ marginBottom: "15px" }}>Website for ACIIE, DAVV</div>
+            <Tag>#HTML5</Tag>
+            <Tag>#CSS3</Tag>
+            <Tag>#Javascript</Tag>
+            <NotDesktop>
+              <br />
+              <br />
+            </NotDesktop>
+            <Tag>#Bootstrap</Tag>
+          </div>
         </div>
       </div>
     </div>

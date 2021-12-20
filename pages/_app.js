@@ -71,18 +71,16 @@ const MyApp = ({ Component, pageProps }) => {
         />
       </Head>
 
-      <div style={{ overflow: "hidden", height: "100vh" }}>
-        <NotDesktop>
-          <MobileNav />
-        </NotDesktop>
-        <Desktop>
-          <div style={{ position: "sticky", zIndex: 1, overflow: "hidden" }}>
-            <DesktopNav />
-          </div>
-        </Desktop>
-        <div style={{ overflow: "auto", height: "100vh" }}>
-          <Component {...pageProps} />
+      <NotDesktop>
+        <MobileNav />
+      </NotDesktop>
+      <Desktop>
+        <div style={{ position: "sticky", zIndex: 1 }}>
+          <DesktopNav />
         </div>
+      </Desktop>
+      <div>
+        <Component {...pageProps} />
       </div>
     </div>
   );

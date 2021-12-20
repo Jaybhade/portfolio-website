@@ -63,47 +63,47 @@ In this case, the adjacency list of node a contains the pair (b,w) always when t
 
 Adjecency List Representation using C++ :
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 
 class Graph {
-	int V;
-	list<int> *l;
+  int V;
+  list<int> *l;
 	
-	public:
-		Graph (int v) {
-			V = v;
-			l = new list<int>[V];  // here list is used insted of vector.
-			// array, list , vector, hashmap anything can be used
-		}
+  public:
+    Graph (int v) {
+      V = v;
+      l = new list<int>[V];  // here list is used insted of vector.
+      // array, list , vector, hashmap anything can be used
+    }
 		
-		void addEdge (int i, int j, bool undir=true) {
-			l[i].push_back(j);
-			if (undir) l[j].push_back(i);
-		}
+    void addEdge (int i, int j, bool undir=true) {
+      l[i].push_back(j);
+      if (undir) l[j].push_back(i);
+    }
 		
-		void printAdjList () {
-			for (int i=0; i<V; i++) {
-				cout << i << "-->";
-				for (auto node : l[i]) cout << node << ",";
-				cout << "\n";
-			}
+    void printAdjList () {
+      for (int i=0; i<V; i++) {
+        cout << i << "-->";
+        for (auto node : l[i]) cout << node << ",";
+        cout << "\n";
+      }
 		}
 };
 
 int main () {
-	Graph g(6);
-	g.addEdge(0,1);
-	g.addEdge(0,4);
-	g.addEdge(2,1);
-	g.addEdge(3,4);
-	g.addEdge(4,5);
-	g.addEdge(2,3);
-	g.addEdge(3,5);
-	g.printAdjList();
+  Graph g(6);
+  g.addEdge(0,1);
+  g.addEdge(0,4);
+  g.addEdge(2,1);
+  g.addEdge(3,4);
+  g.addEdge(4,5);
+  g.addEdge(2,3);
+  g.addEdge(3,5);
+  g.printAdjList();
 	
-	return 0;
+  return 0;
 }
 
 //output:
@@ -123,58 +123,58 @@ Another Method :
 using namespace std;
 
 class Node {
-	public:
-		string name;
-		list<string> neighbours;
+  public:
+    string name;
+    list<string> neighbours;
 		
-		Node(string name) {
-			this->name = name;
-		}
+    Node(string name) {
+      this->name = name;
+    }
 };
 
 class Graph {
-	//All Nodes
-	//Hashmap (string, Node*)
+  //All Nodes
+  //Hashmap (string, Node*)
 	
-	unordered_map<string, Node*> m;
+  unordered_map<string, Node*> m;
 	
-	public:
-		Graph(vector<string> cities) {
-			for(auto city: cities) {
-				m[city] = new Node(city);
-			}
-		}
+  public:
+    Graph(vector<string> cities) {
+      for(auto city: cities) {
+        m[city] = new Node(city);
+      }
+    }
 		
-		void addEdge(string x, string y, bool undir=true) {
-			m[x]->neighbours.push_back(y);	
+    void addEdge(string x, string y, bool undir=true) {
+      m[x]->neighbours.push_back(y);	
 			
-			if (undir) m[y]->neighbours.push_back(x);
-		}
+      if (undir) m[y]->neighbours.push_back(x);
+    }
 		
-		void printAdjList() {
-			for (auto cityPair : m) {
-				auto city = cityPair.first;
-				Node  *node = cityPair.second;
-				cout << city << "-->";
-				for (auto nbr : node->neighbours) {
-					cout << nbr << ",";
-				}
-				cout << "\n";
-			}
-		}
+    void printAdjList() {
+      for (auto cityPair : m) {
+        auto city = cityPair.first;
+        Node  *node = cityPair.second;
+        cout << city << "-->";
+        for (auto nbr : node->neighbours) {
+          cout << nbr << ",";
+        }
+        cout << "\n";
+      }
+    }
 };
 
 int main () {
-	vector<string> cities = {"Delhi", "London", "Paris", "New York"};
-	Graph g(cities);
+  vector<string> cities = {"Delhi", "London", "Paris", "New York"};
+  Graph g(cities);
 	
-	g.addEdge("Delhi", "London");
-	g.addEdge("New York", "London");
-	g.addEdge("Delhi", "Paris");
-	g.addEdge("Paris", "New York");
-	g.printAdjList();
+  g.addEdge("Delhi", "London");
+  g.addEdge("New York", "London");
+  g.addEdge("Delhi", "Paris");
+  g.addEdge("Paris", "New York");
+  g.printAdjList();
 	
-	return 0;
+  return 0;
 }
 
 //output:

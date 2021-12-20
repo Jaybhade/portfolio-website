@@ -62,7 +62,10 @@ article code {
 }
 
 article pre code {
+  font-family: Consolas, "courier new";
   background-color: black;
+  padding: 2px;
+  font-size: 105%;
 }
 
 article u {

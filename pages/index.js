@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div style={{ height: "100%", overflow: "scroll" }}>
       <Head>
         <link rel="manifest" href="manifest.json" />
 

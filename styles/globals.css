@@ -23,6 +23,8 @@ article {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 19px;
   font-weight: 300;
+  max-width: 800px;
+  width: 100%;
   margin-top: 64px;
 }
 
@@ -95,4 +97,12 @@ article img {
   to {
     transform: rotate(359deg);
   }
+}
+
+.timeline {
+  color: grey;
+}
+
+.timeline:hover {
+  color: white;
 }

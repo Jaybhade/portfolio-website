@@ -13,7 +13,6 @@ function PostDetailPage(props) {
       </Head>
       <div
         style={{
-          maxWidth: "800px",
           margin: "auto",
           color: "white",
           padding: "15px",

@@ -2,13 +2,45 @@
 title: 'Graph Introduction and Representation'
 date: '2021-09-13'
 excerpt: What is a Graph? Types of Graph. Representation of Graph.
+timeline: [{
+  title: "What is a Graph ?",
+  link: "#"
+},
+{
+  title: "Types of Graphs",
+  link: "#types-of-graphs"
+},
+{
+  title: "Representation of Graphs",
+  link: "#representation-of-graphs"
+},
+{
+  title: "Adjacency List Representation",
+  link: "#adjacency-list-representation"
+},
+{
+  title: "Adjacency Matrix Representation",
+  link: "#adjacency-matrix-representation"
+},
+{
+  title: "Edge List Representation",
+  link: "#edge-list-representation"
+},
+{
+  title: "Implicit Graph",
+  link: "#implicit-graph"
+}]
 ---
 
-## What is a Graph ?
+## What is a Graph ? 🤔
 
 A Graph is a non-linear data structure consisting of nodes (or vertices) and edges. Edges are the lines that connect two nodes in the graph.
 
 ![Graph Representation.png](/graph-representation/Graph_Representation.png)
+
+<div id="types-of-graphs"></div>
+
+
 
 ## Types of Graphs :
 
@@ -19,6 +51,8 @@ Some of the useful types of graphs are :
 ![Untitled](/graph-representation/Untitled%201.png)
 
 ![Untitled](/graph-representation/Untitled%202.png)
+
+<div id="some-special-types-of-graphs"></div>
 
 ## Some special types of Graph :
 
@@ -32,6 +66,8 @@ Some of the useful types of graphs are :
 
 ![Untitled](/graph-representation/Untitled%207.png)
 
+<div id="representation-of-graphs"></div>
+
 ## Representation of Graphs :
 
 Methods of representing or storing of graphs are :
@@ -40,6 +76,8 @@ Methods of representing or storing of graphs are :
 - Adjacency Matrix
 - Edge List
 - 2D Matrix (Implicit Graph)
+
+<div id="adjacency-list-representation"></div>
 
 ## Adjacency List Representation :
 
@@ -187,6 +225,8 @@ London-->Delhi,New York,
 
 ![Untitled](/graph-representation/Untitled%209.png)
 
+<div id="adjacency-matrix-representation"></div>
+
 ## Adjacency Matrix Representation :
 
 An adjacency matrix is a two-dimensional array that indicates which edges the graph contains. We can efficiently check from an adjacency matrix if there is an edge between two nodes. The matrix can be stored as an array :
@@ -200,6 +240,8 @@ int adj[N][N];
 If the graph is weighted, the adjacency matrix representation can be extended so that the matrix contains the weight of the edge if the edge exists.
 
 ![Untitled](/graph-representation/Untitled%2011.png)
+
+<div id="edge-list-representation"></div>
 
 ## Edge List Representation :
 
@@ -218,6 +260,8 @@ vector<tuple<int,int,int>> edges;
 ```
 
 Each element in this list is of the form (a,b,w), which means that there is an edge from node a to node b with weight w.
+
+<div id="implicit-graph"></div>
 
 ## Implicit Graph :
 

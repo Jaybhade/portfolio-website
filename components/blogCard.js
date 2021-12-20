@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const BlogCard = (props) => {
-  const { title, image, excerpt, date, slug } = props.post;
+  const { title, excerpt, date, slug } = props.post;
   const formattedDate = new Date(date).toLocaleDateString("en-us", {
     day: "numeric",
     month: "long",

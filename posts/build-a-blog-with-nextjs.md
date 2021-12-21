@@ -2,6 +2,35 @@
 title: 'Build a Blog with NextJs'
 date: '2021-06-07'
 excerpt: NextJS is a the React framework for production. If you've been thinking about creating a dev blog for yourself, take a look how I made it for myself.
+timeline: [{
+  title: "What is NextJs?",
+  link: "#"
+},{
+  title: "Create new Project",
+  link: "#create-new-project",
+},{
+  title: "Responsiveness",
+  link: "#responsiveness",
+},{
+  title: "Navbar",
+  link: "#navbar",
+},{
+  title: "Page Routes",
+  link: "#page-routes",
+},{
+  title: "Blog Setup",
+  link: "#blog-setup",
+},{
+  title: "Markdown",
+  link: "#markdown",
+},{
+  title: "Blog Styling",
+  link: "#blog-styling",
+},{
+  title: "Animation",
+  link: "#animation",
+},
+]
 ---
 
   If you've been thinking about creating a dev blog for yourself, take a look how I made it for myself.
@@ -15,10 +44,10 @@ excerpt: NextJS is a the React framework for production. If you've been thinking
  - [Create new project](#create-new-project)
  - [Responsiveness](#responsiveness)
  - [Navbar](#navbar)
- - [Page routes](#page_routes)
- - [Blog setup](#blog_setup)
+ - [Page routes](#page-routes)
+ - [Blog setup](#blog-setup)
  - [Markdown](#markdown)
- - [Blog styling](#blog_styling)
+ - [Blog styling](#blog-styling)
  - [Animation](#animation)
 
 ## <div id="create-new-project">Create new project</div>
@@ -131,7 +160,7 @@ const MyApp = ({ Component, pageProps }) => {
 export default MyApp;
 ```
 
-## <div id="page_routes">Page Routes</div>
+## <div id="page-routes">Page Routes</div>
 
 I wanted my blog to be on a different page of the website. You can also make your about, contact, and project section on different pages of your website. For this, you just have to add components inside the pages folder, every component of the pages folder works as a route.
 For example - 
@@ -144,7 +173,7 @@ pages
   |- contact.js     #url = "/contact"
 ```
 
-## <div id="blog_setup">Blog Setup</div>
+## <div id="blog-setup">Blog Setup</div>
 
 Now, I want to add static blog posts to my portfolio. I started with how a blog post should start. So inside component/postDetail/postHeader.js file - 
 ```
@@ -302,7 +331,7 @@ excerpt: This is my first blog post.
 ## <div id="markdown">Markdown</div>
 [Click here](https://www.markdownguide.org/basic-syntax/) to learn some basic syntax of markdown.
 
-## <div id="blog_styling">Blog Styling</div>
+## <div id="blog-styling">Blog Styling</div>
 
 You can check in the above code that I nested the blog post's content inside `<article>` tag. This tag will help us in styling our blog posts.
 Inside `styles/globals.css`, if we assign some css properties to the tag present inside the article tag, it will directly reflect our blog posts.

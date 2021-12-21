@@ -7,30 +7,29 @@ timeline: [{
   link: "#"
 },{
   title: "Create new Project",
-  link: "#create-new-project",
+  link: "#create-new-project"
 },{
   title: "Responsiveness",
-  link: "#responsiveness",
+  link: "#responsiveness"
 },{
   title: "Navbar",
-  link: "#navbar",
+  link: "#navbar"
 },{
   title: "Page Routes",
-  link: "#page-routes",
+  link: "#page-routes"
 },{
   title: "Blog Setup",
-  link: "#blog-setup",
+  link: "#blog-setup"
 },{
   title: "Markdown",
-  link: "#markdown",
+  link: "#markdown"
 },{
   title: "Blog Styling",
-  link: "#blog-styling",
+  link: "#blog-styling"
 },{
   title: "Animation",
-  link: "#animation",
-},
-]
+  link: "#animation"
+}]
 ---
 
   If you've been thinking about creating a dev blog for yourself, take a look how I made it for myself.

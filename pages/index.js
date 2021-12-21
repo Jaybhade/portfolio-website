@@ -363,7 +363,7 @@ export default function Home() {
               }}
             >
               <div>
-                <h2 style={{ marginRight: "10px" }}>Veteran's Pen</h2>
+                <h2 style={{ marginRight: "10px" }}>Veterans Pen</h2>
               </div>
               <div>
                 <Link href="https://veteranspen.in">

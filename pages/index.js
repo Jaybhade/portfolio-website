@@ -363,10 +363,10 @@ export default function Home() {
               }}
             >
               <div>
-                <h2 style={{ marginRight: "10px" }}>Portfolio Website</h2>
+                <h2 style={{ marginRight: "10px" }}>Veteran's Pen</h2>
               </div>
               <div>
-                <Link href="https://github.com/Jaybhade/portfolio-website">
+                <Link href="https://veteranspen.in">
                   <a target="_blank">Link</a>
                 </Link>
               </div>

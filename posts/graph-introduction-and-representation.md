@@ -1,6 +1,6 @@
 ---
 title: 'Graph Introduction and Representation'
-date: '2021-09-13'
+date: '2021-12-20'
 excerpt: What is a Graph? Types of Graph. Representation of Graph.
 timeline: [{
   title: "What is a Graph ?",

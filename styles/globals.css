@@ -26,6 +26,19 @@ article {
   max-width: 800px;
   width: 100%;
   margin-top: 64px;
+  overflow: hidden;
+}
+
+.article table {
+  width: "100%";
+  border-collapse: collapse;
+}
+
+.article table,
+th,
+td {
+  padding: 5px;
+  border: 1px solid white;
 }
 
 article h1 {
@@ -41,6 +54,8 @@ article p {
 }
 
 article pre {
+  width: "100%";
+  box-sizing: content-box;
   background-color: black;
   padding: 10px;
   overflow-x: scroll;

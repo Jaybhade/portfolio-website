@@ -64,8 +64,6 @@ Some of the useful types of graphs are :
 
 ![Untitled](/graph-representation/Untitled%206.png)
 
-![Untitled](/graph-representation/Untitled%207.png)
-
 <div id="representation-of-graphs"></div>
 
 ## Representation of Graphs :
